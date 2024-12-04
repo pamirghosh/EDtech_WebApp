@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="container mt-4">
+      <form action="" id="form">
+      <div class="sucess-msg" id="toggle"></div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label label-fonts"
+          >Name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Your full name"
+        />
+        <div class="blank-msg nm"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label label-fonts"
+          >Contact Number</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          placeholder="Your personal phone number"
+        />
+        <div class="blank-msg cn"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label label-fonts"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="name@example.com"
+        />
+        <div class="blank-msg em"></div>
+      </div>
+      
+        <div class="mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="pass-check">
+          <label for="exampleFormControlInput1" class="form-label label-fonts"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Must be between 8 to 10 charecter"
+          />
+          <div class="blank-msg pass"></div>
+        </div>
+        <div class="mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="cpass-check">  
+          <label for="exampleFormControlInput1" class="form-label label-fonts"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="cpassword"
+              placeholder="Must be between 8 to 10 charecter"
+            />
+            <div class="blank-msg cp"></div>
+          </div>
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label label-fonts"
+          >Address</label
+        >
+        <textarea placeholder="Write your full address"
+          class="form-control"
+          id="address"
+          rows="3"
+        ></textarea>
+        <div class="blank-msg add"></div>
+        </div>
+        <button type="submit" id="submit-btn" class="btn btn-outline-primary">Submit</button>
+      
+    </form>
+    </div>
+    </div>
+    {% endblock body %}
+    {% block extra_js %}
+    <!-- Add page-specific JS if needed -->
+      <script src="{{ url_for('static', filename='/index.js') }}"></script>
+    {% endblock %}  

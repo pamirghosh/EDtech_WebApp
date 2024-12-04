@@ -1,0 +1,35 @@
+{% extends 'base_after_login.html' %}
+{% block body %}    
+<div class="container">
+  <h3>Welcome back, {{data[1].upper()}}</h3> 
+  <div class="row gy-4"> <!-- gy-4 adds vertical spacing between rows -->
+    <div class="col-lg-5 col-md-6 col-sm-12">
+      <div class="card h-100"> <!-- h-100 ensures uniform height -->
+        <img src="/static/images/card.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title course-name">Demo videos</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="price">300</p>
+          <a href="#" class="btn btn-primary payment">Pay now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-6 col-sm-12">
+      <div class="card h-100">
+        <img src="/static/images/card.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title course-name">Full course</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="price">6000</p>
+          <a href="#" class="btn btn-primary payment">Pay now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='/payment.js') }}"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+{% endblock extra_js %}

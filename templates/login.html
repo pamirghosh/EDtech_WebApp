@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container mt-4">
+  <form action="" id="form">
+    <div class="sucess-msg" id="toggle"></div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label label-fonts"
+      >Email</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="email"
+      placeholder="Your registered email"
+    />
+    <div class="blank-msg em"></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label label-fonts"
+      >Password</label
+    >
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      placeholder="Your password"
+    />
+    <div class="blank-msg pass"></div>
+  </div>
+    <button type="submit" id="login-btn" class="btn btn-outline-primary">Login</button>
+    <div class="mt-1 mb-0">
+    <p>New student? Please click on <a id="a-reg" href="{{url_for('index')}}">register</a></p>
+  </div>
+</form>
+</div>
+</div>
+{% endblock body %}
+{% block extra_js %}
+    <!-- Add page-specific JS if needed -->
+      <script src="{{ url_for('static', filename='/login.js') }}"></script>
+    {% endblock %}  
