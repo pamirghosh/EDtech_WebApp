@@ -1,0 +1,15 @@
+.container{
+  width: 60%;
+  margin-top: 1%;
+  padding: 6px 12px;
+  text-align: center;
+}
+.container h3{
+  text-align: center;
+  margin-bottom: 3%;
+  color: #f9f8fa;
+  font-family: cursive;
+}
+.card-class{
+  margin-left: 8%;
+}

@@ -1,0 +1,74 @@
+#sign-btn{
+  margin: 2px;
+  font-weight: bold;
+  font-family: cursive;
+}
+#submit-btn{
+  margin-left: 32%;
+    width: 35%;
+    font-size: 19px;
+    border-radius: 22px;
+}
+footer{
+  background-color: #FAFAFA;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e7e7e7;
+}
+footer p {
+  margin: 0;
+}
+#form {
+  padding: 1% 1%;
+  margin: 2% 23%;
+  border: 4px solid #8280e0;
+  border-radius: 2%;
+  background: white;
+}
+.blank-msg{
+  color: red;
+  font-style: italic;
+}
+#reg-heading{
+  text-align: center;
+  font-style:inherit;
+}
+.text-color{
+  color: #6565f7;
+}
+body{
+  background: linear-gradient(to right, #6a11cb, #2575fc);  
+}
+.fonts{
+  font-family: cursive;
+  font-size: larger;
+  font-weight: bold;  
+  color: #5d4ae2;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: cursive;
+}
+.label-fonts{
+  font-family: cursive;
+  font-size: larger;
+}
+.sucess-msg{
+  color: green;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+}
+.failue-msg{
+  color: red;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+}
+#a-reg{
+  text-decoration: none;
+  font-weight: 600;
+  color: #0018f7
+}
