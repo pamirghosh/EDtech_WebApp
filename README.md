@@ -29,9 +29,3 @@ An engaging and user-friendly web application that provides interactive learning
 - **Payment Integration:** Razorpay API for secure transactions.  
 - **Email Services:** SMTP for sending payment confirmation emails.  
 
-## Installation and Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/interactive-stock-market-learning-app.git
-   cd interactive-stock-market-learning-app
