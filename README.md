@@ -23,7 +23,7 @@ An engaging and user-friendly web application that provides interactive learning
   - Add, remove, and modify courses with ease.  
 
 ## Tech Stack
-- **Frontend:** HTML, CSS, JavaScript (with Fetch API).  
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript (with Fetch API).  
 - **Backend:** Python (Flask framework).  
 - **Database:** MySQL for storing user and course data.  
 - **Payment Integration:** Razorpay API for secure transactions.  
